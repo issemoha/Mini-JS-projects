@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mini JS projects</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+    </head>
+    <body>
+        <h1 align="center">JS projects</h1>
+        <div class="section">
+            <p class="title">even or odd</p>
+            <input type="number" id="isEven_input"/>
+            <button onclick="isEven($('#isEven_input').val())">check</button>
+            <div class="result" id="isEven_result"></div>
+        </div>
+        <div class="section">
+            <p class="title">prime number</p>
+            <input type="number" id="isPrime_input"/>
+            <button onclick="isPrime($('#isPrime_input').val())">check</button>
+            <div class="result" id="isPrime_result"></div>
+        </div>
+        <div class="section">
+            <p class="title">factorial</p>
+            <input type="number" id="factorial_input"/>
+            <button onclick="factorial($('#factorial_input').val())">calculate</button>
+            <div class="result" id="factorial_result"></div>
+        </div>
+        <div class="section">
+            <p class="title">palindrome strings</p>
+            <input id="palindrome_input"/>
+            <button onclick="palindrome($('#palindrome_input').val())">check</button><br/>
+            <input type="checkbox" checked id="palindrome_checkbox"/><label for="palindrome_checkbox">ignore uppercase characters</label><br/>
+            <input type="checkbox" id="palindrome_spaces"/><label for="palindrome_spaces">ignore spaces</label>
+            <div class="result" id="palindrome_result"></div>
+        </div>
+        <div class="section">
+            <p class="title">is divisable</p>
+            <input type="number" id="div_num"/> ÷
+            <input type="number" id="div_divisor"/>
+            <button onclick="isDivisable($('#div_num').val(),$('#div_divisor').val())">check</button>
+            <div class="result" id="div_result"></div>
+        </div>
+<footer id="main-footer">
+             Isse mohamed &copy; 2022
+            </footer>
+<script src="script.js"></script>
+    </body>
+</html>
